@@ -1,0 +1,18 @@
+@use 'vuetify/settings' with (
+  $body-font-family: (
+    'Inter',
+    'Roboto',
+    sans-serif,
+  ),
+  $font-size-root: 15px,
+  $typography: (
+    'button': (
+      'letter-spacing': normal,
+      'text-transform': none,
+      'font-weight': 500,
+    ),
+  ),
+  $border-radius-root: 10px,
+  $card-border-radius: 16px,
+  $input-control-height: 44px
+);

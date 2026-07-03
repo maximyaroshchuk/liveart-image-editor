@@ -1,0 +1,9 @@
+.v-slider.v-input--horizontal {
+  .v-slider-track__background {
+    background-color: rgb(var(--v-theme-on-surface), 0.12);
+  }
+
+  .v-slider-thumb__surface {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.25);
+  }
+}

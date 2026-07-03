@@ -1,0 +1,29 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar__card {
+  flex-shrink: 0;
+  box-shadow: var(--editor-panel-shadow) !important;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+.sidebar > .v-btn {
+  margin-top: 16px;
+}
+
+.sidebar--disabled {
+  .sidebar__card,
+  > .v-btn {
+    opacity: 0.45;
+    pointer-events: none;
+  }
+}

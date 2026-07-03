@@ -1,0 +1,21 @@
+@use './settings';
+@use 'vuetify';
+@use './tokens';
+@use './overrides/button';
+@use './overrides/slider';
+@use './overrides/cropper';
+@use './components/panel';
+@use './components/adjust-panel';
+@use './components/preview-stage';
+@use './components/sidebar';
+@use './components/layout';
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}

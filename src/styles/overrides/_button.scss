@@ -1,0 +1,28 @@
+$btn-height: 44px;
+
+.v-btn {
+  &:not(.v-btn--icon):not(.v-btn--stacked) {
+    --v-btn-height: #{$btn-height};
+    min-height: $btn-height;
+    height: $btn-height;
+  }
+
+  &.v-btn--variant-outlined {
+    border-color: rgb(var(--v-theme-on-surface), 0.14);
+  }
+
+  &.v-btn--variant-flat.v-btn--disabled {
+    opacity: 0.35;
+  }
+}
+
+.v-btn--stacked {
+  border-radius: 12px;
+
+  .v-btn__content {
+    font-size: 0.625rem;
+    line-height: 1.15;
+    white-space: normal;
+    text-align: center;
+  }
+}

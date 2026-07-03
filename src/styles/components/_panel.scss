@@ -1,0 +1,18 @@
+.panel__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.panel__row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stacked-grid__btn {
+  min-width: 4rem !important;
+  height: auto !important;
+  min-height: 4rem !important;
+  padding: 0.375rem 0.5rem !important;
+}

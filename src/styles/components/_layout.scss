@@ -1,0 +1,35 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 1rem;
+  background: var(--editor-bg);
+}
+
+.layout__body {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+}
+
+.layout__sidebar {
+  min-height: 0;
+  max-height: 100%;
+}
+
+.layout__stage {
+  min-height: 0;
+  height: 100%;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    height: auto;
+  }
+
+  .layout__stage {
+    height: 60vh;
+  }
+}
