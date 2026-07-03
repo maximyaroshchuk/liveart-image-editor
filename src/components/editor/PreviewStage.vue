@@ -110,22 +110,24 @@ watch(isCropEditing, async (editing) => {
         </v-chip>
       </div>
 
-      <div class="preview-stage__body" :style="isCropEditing || showCroppedPreview ? undefined : filterStyle">
-        <img
-          v-if="showCroppedPreview"
-          class="preview-stage__cropped"
-          :src="croppedPreviewSizerSrc"
-          :style="croppedPreviewStyle"
-          alt=""
-        >
-        <img
-          v-show="!showCroppedPreview"
-          ref="imageRef"
-          :src="objectUrl"
-          :alt="meta?.name ?? 'image'"
-          class="preview-stage__image"
-          @load="onImageLoad"
-        >
+      <div class="preview-stage__body">
+        <div class="preview-stage__frame" :style="isCropEditing || showCroppedPreview ? undefined : filterStyle">
+          <img
+            v-if="showCroppedPreview"
+            class="preview-stage__cropped"
+            :src="croppedPreviewSizerSrc"
+            :style="croppedPreviewStyle"
+            alt=""
+          >
+          <img
+            v-show="!showCroppedPreview"
+            ref="imageRef"
+            :src="objectUrl"
+            :alt="meta?.name ?? 'image'"
+            class="preview-stage__image"
+            @load="onImageLoad"
+          >
+        </div>
       </div>
     </template>
 
